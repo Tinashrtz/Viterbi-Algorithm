@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "F:/purfard/final2/final2/final2.xst" -ofn "F:/purfard/final2/final2/final2.syr" 
+xst -intstyle ise -ifn "F:/purfard/final2/final2/final2.xst" -ofn "F:/purfard/final2/final2/final2.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-10 final2.ngc final2.ngd  
+cpldfit -intstyle ise -p xc9572-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk final2.ngd 
+XSLTProcess final2_build.xml 
+tsim -intstyle ise final2 final2.nga 
+taengine -intstyle ise -f final2 -w --format html1 -l final2_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n final2 -i final2 

@@ -1,0 +1,6 @@
+V3 3
+FL F:/purfard/final2/final2/final2.vhd 2023/06/24.13:58:19 P.20131013
+EN work/final2 1687602500 FL F:/purfard/final2/final2/final2.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/final2/Behavioral 1687602501 \
+      FL F:/purfard/final2/final2/final2.vhd EN work/final2 1687602500
