@@ -1,0 +1,81 @@
+MDF Database:  version 1.0
+MDF_INFO | final | XC9572-10-PC44
+MACROCELL | 0 | 14 | Q<1>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 2 | 0 | 15 | 0 | 17
+INPUTS | 1 | x
+INPUTP | 1 | 89
+EQ | 3 | 
+   Q<1>.D = x;
+   Q<1>.CLK = clk;	// GCK
+   Q<1>.AR = res;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | res
+
+MACROCELL | 0 | 15 | Q<0>
+ATTRIBUTES | 8626944 | 0
+OUTPUTMC | 2 | 0 | 17 | 0 | 16
+INPUTS | 1 | Q<1>.LFBK
+INPUTMC | 1 | 0 | 14
+EQ | 3 | 
+   Q<0>.D = Q<1>.LFBK;
+   Q<0>.CLK = clk;	// GCK
+   Q<0>.AR = res;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | res
+
+MACROCELL | 1 | 1 | y_0
+ATTRIBUTES | 8880898 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 3 | res  | x1<0>  | y_0.LFBK
+INPUTMC | 2 | 0 | 17 | 1 | 1
+INPUTP | 1 | 91
+EQ | 3 | 
+   y<0>.D = res & y_0.LFBK
+	# !res & x1<0>;
+   y<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 1 | y_1
+ATTRIBUTES | 8880898 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 3 | res  | y_1.LFBK  | x1<1>.LFBK
+INPUTMC | 2 | 0 | 1 | 0 | 16
+INPUTP | 1 | 91
+EQ | 3 | 
+   y<1>.D = res & y_1.LFBK
+	# !res & x1<1>.LFBK;
+   y<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 17 | x1<0>
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 2 | 1 | 1 | 0 | 17
+INPUTS | 5 | res  | Q<1>.LFBK  | x  | Q<0>.LFBK  | x1<0>.LFBK
+INPUTMC | 3 | 0 | 14 | 0 | 15 | 0 | 17
+INPUTP | 2 | 91 | 89
+EQ | 6 | 
+   x1<0>.D = res & x1<0>.LFBK
+	# x & !res & Q<1>.LFBK & Q<0>.LFBK
+	# x & !res & !Q<1>.LFBK & !Q<0>.LFBK
+	# !x & !res & Q<1>.LFBK & !Q<0>.LFBK
+	# !x & !res & !Q<1>.LFBK & Q<0>.LFBK;
+   x1<0>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 16 | x1<1>
+ATTRIBUTES | 8618752 | 0
+OUTPUTMC | 2 | 0 | 1 | 0 | 16
+INPUTS | 4 | res  | Q<0>.LFBK  | x  | x1<1>.LFBK
+INPUTMC | 2 | 0 | 15 | 0 | 16
+INPUTP | 2 | 91 | 89
+EQ | 4 | 
+   x1<1>.D = res & x1<1>.LFBK
+	# x & !res & !Q<0>.LFBK
+	# !x & !res & Q<0>.LFBK;
+   x1<1>.CLK = clk;	// GCK
+GLOBALS | 1 | 2 | clk
+
+PIN | x | 64 | 0 | N/A | 89 | 3 | 0 | 14 | 0 | 17 | 0 | 16
+PIN | clk | 4096 | 0 | N/A | 20 | 6 | 0 | 14 | 0 | 15 | 1 | 1 | 0 | 1 | 0 | 17 | 0 | 16
+PIN | res | 65600 | 0 | N/A | 91 | 6 | 1 | 1 | 0 | 1 | 0 | 17 | 0 | 16 | 0 | 14 | 0 | 15
+PIN | y<0> | 536871040 | 0 | N/A | 86
+PIN | y<1> | 536871040 | 0 | N/A | 11
