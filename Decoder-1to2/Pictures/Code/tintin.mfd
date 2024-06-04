@@ -1,0 +1,25 @@
+MDF Database:  version 1.0
+MDF_INFO | tintin | XC9572-10-PC44
+MACROCELL | 0 | 1 | x_0_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 2 | y<3>  | y<2>
+INPUTP | 2 | 89 | 9
+EQ | 2 | 
+   x<0> = y<3>
+	$ y<2>;
+
+MACROCELL | 1 | 1 | x_1_OBUF
+ATTRIBUTES | 396034 | 0
+INPUTS | 3 | y<3>  | y<0>  | y<1>
+INPUTP | 3 | 89 | 58 | 29
+EQ | 3 | 
+   !x<1> = y<3>
+	$ y<0> & y<1>
+	# !y<0> & !y<1>;
+
+PIN | y<2> | 64 | 0 | N/A | 9 | 1 | 0 | 1
+PIN | y<3> | 64 | 0 | N/A | 89 | 2 | 0 | 1 | 1 | 1
+PIN | y<0> | 64 | 0 | N/A | 58 | 1 | 1 | 1
+PIN | y<1> | 64 | 0 | N/A | 29 | 1 | 1 | 1
+PIN | x<0> | 536871040 | 0 | N/A | 11
+PIN | x<1> | 536871040 | 0 | N/A | 86

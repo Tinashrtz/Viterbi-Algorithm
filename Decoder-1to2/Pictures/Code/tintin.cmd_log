@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/final3/tintin.xst" -ofn "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/final3/tintin.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-PC44-10 "tintin.ngc" tintin.ngd  
+cpldfit -intstyle ise -p xc9572-10-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk tintin.ngd 
+XSLTProcess tintin_build.xml 
+tsim -intstyle ise tintin tintin.nga 
+taengine -intstyle ise -f tintin -w --format html1 -l tintin_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n tintin -i tintin 
