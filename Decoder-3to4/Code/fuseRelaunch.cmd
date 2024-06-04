@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final4/final4/decoder3to4_final_test_isim_beh.exe" -prj "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final4/final4/decoder3to4_final_test_beh.prj" "work.decoder3to4_final_test" 
