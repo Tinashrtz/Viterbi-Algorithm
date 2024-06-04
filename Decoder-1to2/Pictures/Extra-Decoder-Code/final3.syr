@@ -1,0 +1,403 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: final3.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "final3.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "final3"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : final3
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" in Library work.
+Entity <final3> compiled.
+Entity <final3> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <final3> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <final3> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 39: Width mismatch. <A0> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 40: Width mismatch. <A1> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 41: Width mismatch. <B0> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 42: Width mismatch. <B1> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 43: Width mismatch. <C0> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 44: Width mismatch. <C1> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 45: Width mismatch. <B2> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 46: Width mismatch. <B3> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 47: Width mismatch. <C2> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 48: Width mismatch. <C3> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 49: Width mismatch. <C4> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 50: Width mismatch. <C5> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 51: Width mismatch. <C6> has a width of 9 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" line 52: Width mismatch. <C7> has a width of 9 bits but assigned expression is 4-bit wide.
+Entity <final3> analyzed. Unit <final3> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <final3>.
+    Related source file is "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd".
+    Found 4-bit adder for signal <A0$add0000> created at line 39.
+    Found 4-bit adder for signal <A1$add0000> created at line 40.
+    Found 4-bit adder for signal <B0$add0000> created at line 41.
+    Found 4-bit adder for signal <B1$add0000> created at line 42.
+    Found 4-bit adder for signal <B2$add0000> created at line 45.
+    Found 4-bit adder for signal <B3$add0000> created at line 46.
+    Found 4-bit adder for signal <C0$add0000> created at line 43.
+    Found 4-bit adder for signal <C1$add0000> created at line 44.
+    Found 4-bit adder for signal <C2$add0000> created at line 47.
+    Found 4-bit adder for signal <C3$add0000> created at line 48.
+    Found 9-bit comparator less for signal <min$cmp_lt0000> created at line 63.
+    Found 9-bit comparator less for signal <min$cmp_lt0001> created at line 63.
+    Found 9-bit comparator less for signal <min$cmp_lt0002> created at line 63.
+    Found 9-bit comparator less for signal <min$cmp_lt0003> created at line 63.
+    Found 9-bit comparator less for signal <min$cmp_lt0004> created at line 63.
+    Found 9-bit comparator less for signal <min$cmp_lt0005> created at line 63.
+    Found 9-bit comparator less for signal <min$cmp_lt0006> created at line 63.
+    Found 9-bit adder for signal <T0>.
+    Found 9-bit adder for signal <T0$add0000> created at line 54.
+    Found 9-bit adder for signal <T1>.
+    Found 9-bit adder for signal <T2>.
+    Found 9-bit adder for signal <T2$add0000> created at line 56.
+    Found 9-bit adder for signal <T3>.
+    Found 9-bit adder for signal <T4>.
+    Found 9-bit adder for signal <T4$add0000> created at line 58.
+    Found 9-bit adder for signal <T5>.
+    Found 9-bit adder for signal <T6>.
+    Found 9-bit adder for signal <T6$add0000> created at line 60.
+    Found 9-bit adder for signal <T7>.
+    Found 9-bit comparator equal for signal <y$cmp_eq0000> created at line 72.
+    Found 9-bit comparator equal for signal <y$cmp_eq0001> created at line 72.
+    Found 9-bit comparator equal for signal <y$cmp_eq0002> created at line 72.
+    Found 9-bit comparator equal for signal <y$cmp_eq0003> created at line 72.
+    Found 9-bit comparator equal for signal <y$cmp_eq0004> created at line 72.
+    Found 9-bit comparator equal for signal <y$cmp_eq0005> created at line 72.
+    Found 9-bit comparator equal for signal <y$cmp_eq0006> created at line 72.
+    Summary:
+	inferred  22 Adder/Subtractor(s).
+	inferred  14 Comparator(s).
+Unit <final3> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 22
+ 4-bit adder                                           : 10
+ 9-bit adder                                           : 12
+# Comparators                                          : 14
+ 9-bit comparator equal                                : 7
+ 9-bit comparator less                                 : 7
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 22
+ 4-bit adder                                           : 10
+ 9-bit adder                                           : 12
+# Comparators                                          : 14
+ 9-bit comparator equal                                : 7
+ 9-bit comparator less                                 : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit final3 : the following signal(s) form a combinatorial loop: Mcompar_min_cmp_lt0002_cy<5>, Mcompar_min_cmp_lt0002_lut<0>, y_cmp_eq00001, Mcompar_min_cmp_lt0002_cy<3>, y<0>, y_cmp_eq0000, min_cmp_lt0002, Mcompar_min_cmp_lt0002_cy<4>, Mcompar_min_cmp_lt0002_cy<1>, min<0>, Mcompar_min_cmp_lt0002_cy<0>, Mcompar_min_cmp_lt0002_cy<2>.
+WARNING:Xst:2170 - Unit final3 : the following signal(s) form a combinatorial loop: Mcompar_min_cmp_lt0003_cy<3>, min<1>, Mcompar_min_cmp_lt0003_cy<4>, Mcompar_min_cmp_lt0003_lut<1>, y<1>, Mcompar_min_cmp_lt0003_cy<1>, y_cmp_eq0001, Mcompar_min_cmp_lt0003_cy<5>, y_cmp_eq00012, min_cmp_lt0003, Mcompar_min_cmp_lt0003_cy<2>.
+WARNING:Xst:2170 - Unit final3 : the following signal(s) form a combinatorial loop: Mcompar_min_cmp_lt0004_cy<2>, min<2>, Mcompar_min_cmp_lt0004_cy<3>, y_cmp_eq00023, min_cmp_lt0004, Mcompar_min_cmp_lt0004_cy<4>, y<2>, Mcompar_min_cmp_lt0004_cy<5>, y_cmp_eq0002, Mcompar_min_cmp_lt0004_lut<2>.
+
+Optimizing unit <final3> ...
+
+Mapping all equations...
+WARNING:Xst:2170 - Unit final3 : the following signal(s) form a combinatorial loop: min<3>19, Mcompar_min_cmp_lt0005_lut<3>, y_cmp_eq0003921, Mcompar_min_cmp_lt0005_cy<3>, Mcompar_min_cmp_lt0005_cy<4>, min<3>5, min<3>117, min_cmp_lt0005, min<3>, y_cmp_eq0003, Mcompar_min_cmp_lt0005_cy<5>, min<3>85, y<0>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block final3, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : final3.ngr
+Top Level Output File Name         : final3
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 164
+#      GND                         : 1
+#      INV                         : 5
+#      LUT2                        : 33
+#      LUT3                        : 18
+#      LUT4                        : 66
+#      MULT_AND                    : 5
+#      MUXCY                       : 30
+#      MUXF5                       : 5
+#      VCC                         : 1
+# IO Buffers                       : 9
+#      IBUF                        : 6
+#      OBUF                        : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                       69  out of    768     8%  
+ Number of 4 input LUTs:                122  out of   1536     7%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    124     7%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 47.614ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 207648 / 3
+-------------------------------------------------------------------------
+Delay:               47.614ns (Levels of Logic = 46)
+  Source:            m<3> (PAD)
+  Destination:       y<0> (PAD)
+
+  Data Path: m<3> to y<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.715   1.304  m_3_IBUF (m_3_IBUF)
+     LUT4:I0->O            5   0.479   1.078  Madd_T4_add0000_Madd_xor<1>11 (T4_add0000<1>)
+     LUT4:I0->O            5   0.479   0.953  Madd_T5_cy<1>11 (Madd_T5_cy<1>)
+     LUT2:I1->O            1   0.479   0.976  Madd_T5_xor<2>11 (T5<2>)
+     LUT2:I0->O            1   0.479   0.000  Mcompar_min_cmp_lt0005_lut<2> (Mcompar_min_cmp_lt0005_lut<2>)
+     MUXCY:S->O            1   0.435   0.000  Mcompar_min_cmp_lt0005_cy<2> (Mcompar_min_cmp_lt0005_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0005_cy<3> (Mcompar_min_cmp_lt0005_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0005_cy<4> (Mcompar_min_cmp_lt0005_cy<4>)
+     MUXCY:CI->O           1   0.264   0.681  Mcompar_min_cmp_lt0005_cy<5> (Mcompar_min_cmp_lt0005_cy<5>)
+     INV:I->O              7   0.479   1.201  Mcompar_min_cmp_lt0005_cy<5>_inv_INV_0 (min_cmp_lt0005)
+     LUT4:I0->O            1   0.479   0.000  min<3>441 (min<3>441)
+     MUXF5:I1->O           1   0.314   0.851  min<3>44_f5 (min<3>44)
+     LUT2:I1->O            1   0.479   0.000  min<3>852 (min<3>852)
+     MUXF5:I0->O           1   0.314   0.976  min<3>85_f5 (min<3>85)
+     LUT3:I0->O            1   0.479   0.851  min<3>117 (min<3>117)
+     LUT4:I1->O           16   0.479   1.221  min<3>150 (min<3>)
+     LUT3:I1->O            1   0.479   0.000  Mcompar_min_cmp_lt0004_lut<3> (Mcompar_min_cmp_lt0004_lut<3>)
+     MUXCY:S->O            1   0.435   0.000  Mcompar_min_cmp_lt0004_cy<3> (Mcompar_min_cmp_lt0004_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0004_cy<4> (Mcompar_min_cmp_lt0004_cy<4>)
+     MUXCY:CI->O           1   0.264   0.681  Mcompar_min_cmp_lt0004_cy<5> (Mcompar_min_cmp_lt0004_cy<5>)
+     INV:I->O              8   0.479   1.216  Mcompar_min_cmp_lt0004_cy<5>_inv_INV_0 (min_cmp_lt0004)
+     LUT2:I0->O            1   0.479   0.704  min<2>81 (min<2>81)
+     LUT4:I3->O            1   0.479   0.704  min<2>173 (min<2>173)
+     LUT4:I3->O           16   0.479   1.221  min<2>220 (min<2>)
+     LUT2:I1->O            1   0.479   0.000  Mcompar_min_cmp_lt0003_lut<2> (Mcompar_min_cmp_lt0003_lut<2>)
+     MUXCY:S->O            1   0.435   0.000  Mcompar_min_cmp_lt0003_cy<2> (Mcompar_min_cmp_lt0003_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0003_cy<3> (Mcompar_min_cmp_lt0003_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0003_cy<4> (Mcompar_min_cmp_lt0003_cy<4>)
+     MUXCY:CI->O           1   0.264   0.681  Mcompar_min_cmp_lt0003_cy<5> (Mcompar_min_cmp_lt0003_cy<5>)
+     INV:I->O              7   0.479   1.201  Mcompar_min_cmp_lt0003_cy<5>_inv_INV_0 (min_cmp_lt0003)
+     LUT2:I0->O            1   0.479   0.704  min<1>1 (min<1>1)
+     LUT4:I3->O            1   0.479   0.851  min<1>148 (min<1>148)
+     LUT4:I1->O           12   0.479   1.120  min<1>227 (min<1>)
+     LUT2:I1->O            1   0.479   0.000  Mcompar_min_cmp_lt0002_lut<1> (Mcompar_min_cmp_lt0002_lut<1>)
+     MUXCY:S->O            1   0.435   0.000  Mcompar_min_cmp_lt0002_cy<1> (Mcompar_min_cmp_lt0002_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0002_cy<2> (Mcompar_min_cmp_lt0002_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0002_cy<3> (Mcompar_min_cmp_lt0002_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcompar_min_cmp_lt0002_cy<4> (Mcompar_min_cmp_lt0002_cy<4>)
+     MUXCY:CI->O           1   0.264   0.681  Mcompar_min_cmp_lt0002_cy<5> (Mcompar_min_cmp_lt0002_cy<5>)
+     INV:I->O              6   0.479   1.148  Mcompar_min_cmp_lt0002_cy<5>_inv_INV_0 (min_cmp_lt0002)
+     LUT4:I0->O            1   0.479   0.851  min<0>36 (min<0>36)
+     LUT4:I1->O            8   0.479   1.091  min<0>124 (min<0>)
+     LUT4:I1->O            1   0.479   0.976  y_cmp_eq0000986 (y_cmp_eq0000986)
+     LUT4:I0->O            3   0.479   1.066  y_cmp_eq0000989 (y_cmp_eq0000)
+     LUT4:I0->O            1   0.479   0.681  y<0>1 (y_0_OBUF)
+     OBUF:I->O                 4.909          y_0_OBUF (y<0>)
+    ----------------------------------------
+    Total                     47.614ns (21.948ns logic, 25.666ns route)
+                                       (46.1% logic, 53.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.90 secs
+ 
+--> 
+
+Total memory usage is 4504152 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

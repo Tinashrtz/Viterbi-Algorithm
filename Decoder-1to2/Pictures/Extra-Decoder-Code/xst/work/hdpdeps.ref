@@ -1,0 +1,9 @@
+V3 3
+FL "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" 2023/06/25.18:35:50 P.20131013
+EN work/final3 1687705552 \
+      FL "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181 PB ieee/std_logic_arith 1381692177
+AR work/final3/Behavioral 1687705553 \
+      FL "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/wrong_code.vhd" \
+      EN work/final3 1687705552

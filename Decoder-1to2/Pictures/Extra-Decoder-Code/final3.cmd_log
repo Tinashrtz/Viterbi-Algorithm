@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/final3.xst" -ofn "F:/purfard/LOGIC CIRCUITS FINAL PROJECT/final3/wrong_code/final3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "final3.ngc" final3.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o final3_map.ncd final3.ngd final3.pcf 
+par -w -intstyle ise -ol high -t 1 final3_map.ncd final3.ncd final3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml final3.twx final3.ncd -o final3.twr final3.pcf 
